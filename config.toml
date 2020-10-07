@@ -4,7 +4,3 @@ title = "My New Hugo Site"
 [deployment]
   order = [".jpg", ".gif$"]
 
-[[deployment.targets]]
-
-name = "mydeployment"
-URL = "s3://no-datadog-challenge?region=USEast"
