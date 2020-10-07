@@ -21,12 +21,20 @@ a:hover {
   flex-direction: column;
 }
 
-/* sidebar */
+
+
+/* navbar */
 
 .nav-bar{
-  width: 168px;
+  width: 200px;
   background: #724EEF;
   color: white;
+}
+
+.nav-bar ul{
+    padding: 0;
+    list-style-type: none;
+    margin-left: 13px;
 }
 
 .nav-bar li>a{
@@ -37,6 +45,7 @@ a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
+
 .nav-bar li{
   margin-top: 30px;
   font-weight: bold;
@@ -45,6 +54,11 @@ a:hover {
 .nav-bar li:last-child{
   font-weight: normal;
   margin-top: 50px;
+}
+
+.nav-bar>h4{
+  padding-top: 50px;
+  margin: 0 13px;
 }
 
 
@@ -96,7 +110,12 @@ a:hover {
 
 
 /* CONTENT */
-
+.upper-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 230px;
+}
 
 .upper-left>h1{
   font-size: 1.4rem;
@@ -122,7 +141,7 @@ a:hover {
   flex-direction: row;
   background: #F5F5F5;
   padding: 30px;
-  margin-left: 20px;
+  margin: 0 60px;
 
 }
 
@@ -138,6 +157,7 @@ a:hover {
 .upper-content ul {
   padding: 0;
 }
+
 
 .ib-left h6, .ib-left a{
   color: #2B2AA7;
@@ -176,8 +196,10 @@ a:hover {
 }
 
 .upper-content{
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 20px 30px 20px 10px;
 }
 
@@ -189,4 +211,96 @@ a:hover {
 .ib-left, .ib-right, .ib-center {
   padding: 0 10px;
   width: 150px;
+}
+
+.content-bottom{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.small-box{
+  height: 180px;
+  width: 320px;
+  margin: 10px;
+  font-size: 0.9rem;
+
+}
+
+.medium-box{
+  height: 300px;
+  width: 320px;
+  margin: 10px;
+  background: #F5F5F5;
+  padding: 25px;
+
+}
+
+.large-box{
+  height: 400px;
+  width: 320px;
+  margin: 10px;
+}
+
+.large-subsquare{
+  width: 200px;
+  height: 200px;
+}
+
+.large-subsquare h6{
+  font-size: 1rem;
+}
+
+.large-subsquare p{
+  font-size: 0.6rem;
+}
+
+.green-box{
+  background: #14D071;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.red-box{
+  background: #FF635A;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.blue-box{
+  background: #2B2AA7;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.green-box:hover{
+  background: rgba(20, 208, 113, 0.7);
+  transition: 500ms;
+  
+}
+.red-box:hover{
+  background: rgba(255, 99, 90, 0.7);
+  transition: 500ms;
+}
+
+.blue-box:hover{
+  background: rgba(43, 42, 167, 0.7);
+  transition: 500ms;
+}
+
+.title{
+  font-size: 0.6rem;
+}
+
+.medium-box .title{
+  color: #724EEF;
+}
+
+.bold{
+  font-weight: bold;
 }
